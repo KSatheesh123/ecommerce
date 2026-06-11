@@ -18,7 +18,7 @@ function Cart({ cart, setCart }) {
     const email = localStorage.getItem("email");
 
     try {
-      await axios.post("http://localhost:8001/order", {
+      await axios.post("https://ecommerce-backend-xyz.onrender.com/order", {
         email,
         items: cart,
         total

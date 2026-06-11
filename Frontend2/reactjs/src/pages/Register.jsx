@@ -9,7 +9,7 @@ function Register() {
 
   const register = async () => {
 
-    await axios.post("http://localhost:8000/register", {
+    await axios.post("https://ecommerce-backend-xyz.onrender.com/register", {
       name,
       email,
       password
